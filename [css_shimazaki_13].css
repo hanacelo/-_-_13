@@ -1,0 +1,477 @@
+body{
+    width: 1200px;
+    min-height: 100vh; /*全画面表示*/
+    background-size: cover;
+    background-color: white;
+    margin: auto;
+}
+
+.back{width: 1200px;
+    margin: auto;
+    background-color: white;
+}
+
+.flex_test-box{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: auto;
+    font-family: "Courier New";
+    font-size: 25px;
+    height: 100px;
+    background-color: #FAFAD2;
+}
+
+.flex_test-item{
+    color: #333333;
+    padding: auto;
+    margin: auto;
+}
+
+.title{/*親div*/
+    position: relative; /*相対配置*/
+}
+
+.title img{
+    width:100%;
+}
+
+.title span{
+    position: absolute;/*絶対配置*/
+    top: 60%;
+    left: 20%;
+    transform: translate(-30%,-50%); /*文字の場所を中央に調整*/
+    margin: 0; /*余白だった気がする*/
+    font-family: "Courier New";
+    font-size: 45px;
+    text-align: center;
+    color: #333333;
+    font-weight: bolder; /*文字を一段階太くする*/
+}
+
+.information{
+    padding-top: 50px;
+}
+
+.information h1{
+    font-size: 60px;
+    font-family: "Courier New";
+    text-align: center;
+    background-color: ;
+    font-weight: lighter;
+}
+
+.box{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+}
+
+.box img{
+    width: 33.3%;
+    height: auto;
+    object-fit: cover; /*大きいやつを切って大きさ揃える*/
+}
+
+.information h2{
+    width: 1000px;
+    height: ;
+    margin:0 auto; /*枠の中央寄せのために適用*/
+
+    border: solid; /*枠線を見える化*/
+    border-color: #FAFAD2;
+    background-color: #FFFFF0;
+}
+
+.time{
+    font-size: 18px;
+    font-family: sans-serif;
+    white-space: pre;
+    text-align: center;
+    line-height: 2;
+    margin-top: 30px;
+    font-weight: lighter;
+    margin-bottom: -20px;
+}
+
+.naiyou{
+    font-size: 18px;
+    font-family: sans-serif;
+    white-space: pre;
+    text-align: center;
+    line-height: 2;
+    margin-top: -10px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+.slide{
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: -16px;
+  }
+
+.slider-item {
+    width: 1000px;
+    float: left;
+  }
+
+@keyframes slideshow {
+      0% {
+      opacity: 0;
+      }
+      10%{
+      opacity: 1;}
+      28% {
+      opacity: 1;
+      }
+      38% {
+      opacity: 0;
+      }
+      100% {
+      opacy:0;
+      }
+  }
+
+.slide img{
+    object-fit: cover; /*大きいやつを切って大きさ揃える*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation :slideshow 24s linear infinite;
+}
+
+.slide img:nth-child(2){
+    animation-delay: 8s;
+  }
+   
+  .slide img:last-child{
+    animation-delay: 16s;
+  }
+
+.about{
+    padding-top: 150px;
+}
+
+.about h1{
+    font-size: 60px;
+    font-family: "Courier New";
+    text-align: center;
+    background-color: ;
+    font-weight: lighter; /*文字細くする*/
+}
+
+.about h2{
+    font-size: 18px;
+    width: 1000px;
+    margin:0 auto; /*枠の中央寄せのために適用*/
+
+    border: solid; /*枠線を見える化*/
+    border-color: #FAFAD2;
+    background-color: #FFFFF0;
+}
+
+.a{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    white-space: pre;
+    text-align: center;
+    line-height:2; /*行間の設定。単位入れない方がいいらしい*/
+    margin-top: 30px; /*余白消したいときはmarginをマイナスで*/
+    margin-bottom: -10px;
+}
+
+.b{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    white-space: pre;
+    text-align: center;
+    line-height:2; /*行間の設定。単位入れない方がいいらしい*/
+    margin-top: -20px; /*余白消したいときはmarginをマイナスで*/
+    margin-bottom: 40px;
+}
+
+.menu{
+    padding-top: 150px;
+}
+
+.menu h1{
+    font-size: 60px;
+    font-family: "Courier New";
+    text-align: center;
+    background-color: ;
+    font-weight: lighter;
+}
+
+.menulist{
+    width: 800px;
+    margin-left: 200px; /*フレックスボックスの中央寄せ*/
+}
+
+.container1{
+    display: flex;
+    flex-direction: row; /*左から右に配置*/
+}
+
+.container1 img{
+    width: 50%;
+    background-color:white;
+    object-fit: contain;
+}
+
+.item1{
+    display: flex;
+    width:50%;
+    font-size: 20px;
+    background-color: #FAFAD2;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row; /*左から右に配置*/
+}
+
+.item2{
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    background-color: #FAFAD2;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 img{
+    width: 50%;
+    object-fit: contain;
+}
+
+.container3{
+    display: flex;
+    flex-direction: row; /*左から右に配置*/
+}
+
+.container3 img{
+    display: flex;
+    width: 50%;
+}
+
+.item3{
+    display: flex;
+    width: 50%;
+    height: auto;
+    font-size: 20px;
+    background-color: #FAFAD2;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4{
+    display: flex;
+    flex-direction: row; /*左から右に配置*/
+}
+
+.item4{
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    background-color: #FAFAD2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.item4 p{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container4 img{
+    width: 50%;
+    font-size: 30px;
+    background-color: #FAFAD2; 
+}
+
+/*ここからフォーム*/
+.resavation{
+    padding-top: 150px;
+}
+.resavation h1{
+    font-size: 60px;
+}
+
+.form{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border: solid;
+    border-color: #FAFAD2;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #FFFFF0;
+}
+
+.resavation p{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.contact-table{
+    width:90%;
+    margin: bottom 20px;
+    align-content: center;
+    margin: 15px auto;
+}
+
+.contact-item,
+.contact-body{
+    padding: 20px;
+    border:1px solid #ccc; /*フォームの線の色*/
+    background-color: ; /*テキストボックスのフォームじゃないとこの色*/
+}
+
+.contact-item{
+    text-align: left;
+    width: 30%;
+    background-color: #eee; /*フォームの左のとこの色*/
+}
+
+.contact-body{
+    width: 100%;
+}
+
+.form-text{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /*フォームのテキストボックスの線の色*/
+    appearance: none;         /*PCによって異なるスタイルになるのを解除*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+}
+
+.contact-sex + .contact-sex {
+    margin-left: 10px;
+}
+
+.contact-sex-txt {
+    margin-left: 5px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /*どこの色かまじでわからん*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-submit {
+    width: 250px;
+    background-color: #333; /*送信ボックスの色*/
+    color: #fff; /*送信ボックスの文字の色*/
+    font-weight: bold;
+    display: block;
+    margin: 15px auto;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 100vh;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    
+  }
+
+.SNS{
+    padding-top: 150px;
+}
+
+.SNS h1{
+    font-size: 60px;
+    font-family: "Courier New";
+    text-align: center;
+    background-color: ;
+    font-weight: lighter;
+}
+
+blockquote{
+    padding: 30px;
+}
+
+.hoge{
+    background-color:;
+    text-align: center;
+}
+
+.resavation h1{
+    font-size: 60px;
+    font-family: "Courier New";
+    text-align: center;
+    background-color: ;
+    font-weight: lighter;
+}
+
+.map{
+    border: solid;
+    border-color: #FAFAD2;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #FFFFF0;
+}
+
+.access{
+    padding-top: 150px;
+}
+
+.access h1{
+    font-size: 60px;
+    font-family: "Courier New";
+    text-align: center;
+    background-color: ;
+    font-weight: lighter;
+}
+
+.access h2{
+    text-align: center;
+    white-space: pre;
+    font-size: 18px;
+    margin-bottom: -20px;
+    margin-top: 50px;
+}
+
+.access p{
+    text-align: center;
+    white-space: pre;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: -5px;
+    padding-bottom: 50px;
+}
+
+.footer{
+    background-color: #FAFAD2;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; /*heightと同じ値を入れることで中央揃え*/
+    margin-top: 100px;
+}
